@@ -1,9 +1,0 @@
-body{
-    color: bisque;
-    font-size: 20px;
-    text-align: center;
-    background-image: url("../data/images/hellothere.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-}

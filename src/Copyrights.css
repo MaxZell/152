@@ -1,0 +1,17 @@
+.copyrights{
+    width: 500px;
+    font-size: large;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}

@@ -30,7 +30,7 @@ function DSGVO() {
 }
 
 function setActive(name) {
-  console.log(`hello, ${name}`);
+  console.log(`tab: ${name}`);
 }
 
 function App() {

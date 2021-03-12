@@ -9,11 +9,11 @@ import { createIFrame } from "./DSGVO";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function Home() {
-  return( 
-    <>
-    <h2>Home</h2>
-    <div className="Title">MaxZel Webseite</div>
-    </>
+  return(
+    <div className="home">
+      <h2>Home</h2>
+      <div className="Title">MaxZel Webseite</div>
+    </div>
   );
 }
 
@@ -22,7 +22,6 @@ function Impressum() {
 }
 
 function Copyrights() {
-  // return <h2>Copyrights</h2>;
   return createCopyrights();
 }
 
@@ -30,11 +29,14 @@ function DSGVO() {
   return createIFrame();
 }
 
+function setActive(name) {
+  console.log(`hello, ${name}`);
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      {/* <title>MaxZel Art Gallery</title> */}
       </header>
       <CookieConsent
         location="bottom"
@@ -51,16 +53,16 @@ function App() {
           <div>
             <nav>
               <ul>
-                <li>
+                <li onClick={() => setActive('home')}>
                   <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li onClick={() => setActive('impressum')}>
                   <Link to="/impressum">Impressum</Link>
                 </li>
-                <li>
+                <li onClick={() => setActive('copyrights')}>
                   <Link to="/copyrights">Copyrights</Link>
                 </li>
-                <li>
+                <li onClick={() => setActive('dsgvo')}>
                   <Link to="/dsgvo">DSGVO</Link>
                 </li>
               </ul>

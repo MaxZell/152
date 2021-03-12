@@ -1,9 +1,12 @@
+.impressum{
+    width: 600px;
+}
+
 tr{
     font-size: 20px;
 }
 
 th{
-    /* width: 100px; */
     text-align: left;
 }
 .title{

@@ -6,6 +6,13 @@ import CookieConsent from "react-cookie-consent";
 import { createImpressum } from "./Impressum";
 import { createCopyrights } from "./Copyrights";
 import { createIFrame } from "./DSGVO";
+import { createStyleguide } from "./Styleguide";
+import { createGalerie } from "./Galerie";
+import { createCssAnimation } from "./cssAnimation";
+import { createMultigifs } from "./multiGifs";
+import { createVideoAudio } from "./videoAudio";
+import { createPictureFormats } from "./pictureFormats";
+
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function Home() {
@@ -27,6 +34,30 @@ function Copyrights() {
 
 function DSGVO() {
   return createIFrame();
+}
+
+function Styleguide() {
+  return createStyleguide();
+}
+
+function Galerie() {
+  return createGalerie();
+}
+
+function CSSAnimation() {
+  return createCssAnimation();
+}
+
+function Multigifs() {
+  return createMultigifs();
+}
+
+function VideoAudio() {
+  return createVideoAudio();
+}
+
+function PictureFormats() {
+  return createPictureFormats();
 }
 
 function setActive(name) {
@@ -59,6 +90,24 @@ function App() {
                 <li onClick={() => setActive('impressum')}>
                   <Link to="/impressum">Impressum</Link>
                 </li>
+                <li onClick={() => setActive('styleguide')}>
+                  <Link to="/styleguide">Styleguide</Link>
+                </li>
+                <li onClick={() => setActive('galerie')}>
+                  <Link to="/galerie">Galerie</Link>
+                </li>
+                <li onClick={() => setActive('cssanimation')}>
+                  <Link to="/cssAnimation">CSS Animation</Link>
+                </li>
+                <li onClick={() => setActive('multigifs')}>
+                  <Link to="/multigifs">Multi-Gifs</Link>
+                </li>
+                <li onClick={() => setActive('video-audio')}>
+                  <Link to="/video-audio">Video & Audio</Link>
+                </li>
+                <li onClick={() => setActive('picture-formats')}>
+                  <Link to="/picture-formats">Picture Formats</Link>
+                </li>
                 <li onClick={() => setActive('copyrights')}>
                   <Link to="/copyrights">Copyrights</Link>
                 </li>
@@ -68,14 +117,32 @@ function App() {
               </ul>
             </nav>
             <Switch>
-              <Route path="/dsgvo">
-                <DSGVO />
-              </Route>
               <Route path="/impressum">
                 <Impressum />
               </Route>
+              <Route path="/styleguide">
+                <Styleguide />
+              </Route>
+              <Route path="/galerie">
+                <Galerie />
+              </Route>
+              <Route path="/cssAnimation">
+                <CSSAnimation />
+              </Route>
+              <Route path="/multigifs">
+                <Multigifs />
+              </Route>
+              <Route path="/video-audio">
+                <VideoAudio />
+              </Route>
+              <Route path="/picture-formats">
+                <PictureFormats />
+              </Route>
               <Route path="/copyrights">
                 <Copyrights />
+              </Route>
+              <Route path="/dsgvo">
+                <DSGVO />
               </Route>
               <Route path="/">
                 <Home />

@@ -6,10 +6,6 @@ import { createCopyrights } from "./Copyrights";
 import { createIFrame } from "./DSGVO";
 import { createStyleguide } from "./Styleguide";
 import { createGallery } from "./formatsGallery";
-import { createCssAnimation } from "./cssAnimation";
-import { createMultigifs } from "./multiGifs";
-import { createVideoAudio } from "./videoAudio";
-import { createFormats } from "./Formats";
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
@@ -40,22 +36,6 @@ function Styleguide() {
 
 function MediaGallery() {
   return createGallery();
-}
-
-function CSSAnimation() {
-  return createCssAnimation();
-}
-
-function Multigifs() {
-  return createMultigifs();
-}
-
-function VideoAudio() {
-  return createVideoAudio();
-}
-
-function PictureFormats() {
-  return createFormats();
 }
 
 function setActive(name) {
@@ -94,18 +74,6 @@ function App() {
                 <li onClick={() => setActive('gallery')}>
                   <Link to="/gallery">Gallery</Link>
                 </li>
-                <li onClick={() => setActive('cssanimation')}>
-                  <Link to="/cssAnimation">CSS Animation</Link>
-                </li>
-                <li onClick={() => setActive('multigifs')}>
-                  <Link to="/multigifs">Multi-Gifs</Link>
-                </li>
-                <li onClick={() => setActive('video-audio')}>
-                  <Link to="/video-audio">Video & Audio</Link>
-                </li>
-                <li onClick={() => setActive('picture-formats')}>
-                  <Link to="/picture-formats">Picture Formats</Link>
-                </li>
                 <li onClick={() => setActive('copyrights')}>
                   <Link to="/copyrights">Copyrights</Link>
                 </li>
@@ -115,34 +83,22 @@ function App() {
               </ul>
             </nav>
             <Switch>
-              <Route path={process.env.PUBLIC_URL + '/impressum'}>
+              <Route path="/impressum">
                 <Impressum />
               </Route>
-              <Route path={process.env.PUBLIC_URL + '/styleguide'}>
+              <Route path="/styleguide">
                 <Styleguide />
               </Route>
-              <Route path={process.env.PUBLIC_URL + '/gallery'}>
+              <Route path="/gallery">
                 <MediaGallery />
               </Route>
-              <Route path={process.env.PUBLIC_URL + '/cssAnimation'}>
-                <CSSAnimation />
-              </Route>
-              <Route path={process.env.PUBLIC_URL + '/multigifs'}>
-                <Multigifs />
-              </Route>
-              <Route path={process.env.PUBLIC_URL + '/video-audio'}>
-                <VideoAudio />
-              </Route>
-              <Route path={process.env.PUBLIC_URL + '/picture-formats'}>
-                <PictureFormats />
-              </Route>
-              <Route path={process.env.PUBLIC_URL + '/copyrights'}>
+              <Route path="/copyrights">
                 <Copyrights />
               </Route>
-              <Route path={process.env.PUBLIC_URL + '/dsgvo'}>
+              <Route path="/dsgvo">
                 <DSGVO />
               </Route>
-              <Route path={process.env.PUBLIC_URL + '/'} path="/">
+              <Route path="/">
                 <Home />
               </Route>
             </Switch>

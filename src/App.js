@@ -1,19 +1,17 @@
 import './App.css';
-import ImageContainer from "./ImageContainer";
-import images from "./assets/art.json";
 
 import CookieConsent from "react-cookie-consent";
 import { createImpressum } from "./Impressum";
 import { createCopyrights } from "./Copyrights";
 import { createIFrame } from "./DSGVO";
 import { createStyleguide } from "./Styleguide";
-import { createGalerie } from "./Galerie";
+import { createGallery } from "./formatsGallery";
 import { createCssAnimation } from "./cssAnimation";
 import { createMultigifs } from "./multiGifs";
 import { createVideoAudio } from "./videoAudio";
 import { createFormats } from "./Formats";
 
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as HashRouter, Switch, Route, Link} from "react-router-dom";
 
 function Home() {
   return(
@@ -40,8 +38,8 @@ function Styleguide() {
   return createStyleguide();
 }
 
-function Galerie() {
-  return createGalerie();
+function MediaGallery() {
+  return createGallery();
 }
 
 function CSSAnimation() {
@@ -80,7 +78,7 @@ function App() {
         This website uses cookies to enhance the user experience.
       </CookieConsent>
       <div className="Main">
-        <Router>
+        <HashRouter>
           <div>
             <nav>
               <ul>
@@ -93,8 +91,8 @@ function App() {
                 <li onClick={() => setActive('styleguide')}>
                   <Link to="/styleguide">Styleguide</Link>
                 </li>
-                <li onClick={() => setActive('galerie')}>
-                  <Link to="/galerie">Galerie</Link>
+                <li onClick={() => setActive('gallery')}>
+                  <Link to="/gallery">Gallery</Link>
                 </li>
                 <li onClick={() => setActive('cssanimation')}>
                   <Link to="/cssAnimation">CSS Animation</Link>
@@ -123,8 +121,8 @@ function App() {
               <Route path="/styleguide">
                 <Styleguide />
               </Route>
-              <Route path="/galerie">
-                <Galerie />
+              <Route path="/gallery">
+                <MediaGallery />
               </Route>
               <Route path="/cssAnimation">
                 <CSSAnimation />
@@ -144,28 +142,12 @@ function App() {
               <Route path="/dsgvo">
                 <DSGVO />
               </Route>
-              <Route path="/">
+              <Route exact path="/">
                 <Home />
               </Route>
             </Switch>
           </div>
-        </Router>
-        {/* <div className="Title">MaxZel Webseite</div> */}
-        <div className="Gallery">
-          {images.map(res => {
-            return (
-              <div key={res.id} className="wrapper">
-                <ImageContainer
-                  src={res.urls.regular}
-                  thumb={res.urls.thumb}
-                  height={res.height}
-                  width={res.width}
-                  alt={res.alt_description}
-                />
-              </div>
-            );
-          })}
-        </div>
+        </HashRouter>
       </div> 
     </div>
   );

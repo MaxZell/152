@@ -1,0 +1,15 @@
+img{
+    height: 200px;
+    width: auto;
+    padding: 3px;
+}
+
+video{
+    height: 200px;
+    width: auto;
+    padding: 3px;
+}
+
+audio{
+    padding: 3px;
+}

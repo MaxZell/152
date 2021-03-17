@@ -1,6 +1,6 @@
 {
-  "short_name": "MaxZel",
-  "name": "MaxZel 152 Webseite",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

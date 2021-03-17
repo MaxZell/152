@@ -1,4 +1,4 @@
-import './Formats.css';
+import './styles/Formats.css';
 
 export function createFormats(){
     return (

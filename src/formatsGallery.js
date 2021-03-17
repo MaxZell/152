@@ -1,4 +1,4 @@
-import './formatsGallery.css'
+import './styles/formatsGallery.css'
 
 const imagesUrl = process.env.PUBLIC_URL + '/assets/formats/images/amabie';
 const videosUrl = process.env.PUBLIC_URL + '/assets/formats/videos/soap_in_the_eye';

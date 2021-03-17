@@ -1,4 +1,4 @@
-import './Copyrights.css';
+import './styles/Copyrights.css';
 
 export function createCopyrights() {
     return (

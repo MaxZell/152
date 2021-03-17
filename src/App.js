@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 
 import CookieConsent from "react-cookie-consent";
 import { createImpressum } from "./Impressum";
@@ -11,7 +11,7 @@ import { createMultigifs } from "./multiGifs";
 import { createVideoAudio } from "./videoAudio";
 import { createFormats } from "./Formats";
 
-import {BrowserRouter as HashRouter, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function Home() {
   return(
@@ -78,7 +78,7 @@ function App() {
         This website uses cookies to enhance the user experience.
       </CookieConsent>
       <div className="Main">
-        <HashRouter>
+        <Router>
           <div>
             <nav>
               <ul>
@@ -115,39 +115,39 @@ function App() {
               </ul>
             </nav>
             <Switch>
-              <Route path="/impressum">
+              <Route path={process.env.PUBLIC_URL + '/impressum'}>
                 <Impressum />
               </Route>
-              <Route path="/styleguide">
+              <Route path={process.env.PUBLIC_URL + '/styleguide'}>
                 <Styleguide />
               </Route>
-              <Route path="/gallery">
+              <Route path={process.env.PUBLIC_URL + '/gallery'}>
                 <MediaGallery />
               </Route>
-              <Route path="/cssAnimation">
+              <Route path={process.env.PUBLIC_URL + '/cssAnimation'}>
                 <CSSAnimation />
               </Route>
-              <Route path="/multigifs">
+              <Route path={process.env.PUBLIC_URL + '/multigifs'}>
                 <Multigifs />
               </Route>
-              <Route path="/video-audio">
+              <Route path={process.env.PUBLIC_URL + '/video-audio'}>
                 <VideoAudio />
               </Route>
-              <Route path="/picture-formats">
+              <Route path={process.env.PUBLIC_URL + '/picture-formats'}>
                 <PictureFormats />
               </Route>
-              <Route path="/copyrights">
+              <Route path={process.env.PUBLIC_URL + '/copyrights'}>
                 <Copyrights />
               </Route>
-              <Route path="/dsgvo">
+              <Route path={process.env.PUBLIC_URL + '/dsgvo'}>
                 <DSGVO />
               </Route>
-              <Route exact path="/">
+              <Route path={process.env.PUBLIC_URL + '/'} path="/">
                 <Home />
               </Route>
             </Switch>
           </div>
-        </HashRouter>
+        </Router>
       </div> 
     </div>
   );

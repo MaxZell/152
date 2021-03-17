@@ -10,9 +10,9 @@
 }
 
 nav{
-  max-width: 700px;
-  display: table-row;
-  /* display: inline-table; */
+  width: 100%;
+  /* max-width: 700px; */
+  /* display: table-row; */
 }
 
 nav ul {
@@ -20,15 +20,17 @@ nav ul {
   margin: 0;
   padding: 0;
   background-color: black;
-  height: 50px;
   text-align: center;
   padding: 10px;
+  overflow: visible;
 }
 
 nav li {
-  display: table-cell;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
   vertical-align: middle;
-  font-size: 30px;
+  font-size: 25px;
   color: bisque;
   padding: 5px;
 }

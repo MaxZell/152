@@ -11,7 +11,7 @@ import { createGalerie } from "./Galerie";
 import { createCssAnimation } from "./cssAnimation";
 import { createMultigifs } from "./multiGifs";
 import { createVideoAudio } from "./videoAudio";
-import { createPictureFormats } from "./pictureFormats";
+import { createFormats } from "./Formats";
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
@@ -57,7 +57,7 @@ function VideoAudio() {
 }
 
 function PictureFormats() {
-  return createPictureFormats();
+  return createFormats();
 }
 
 function setActive(name) {

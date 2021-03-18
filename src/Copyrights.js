@@ -9,7 +9,19 @@ function Button(){
 export function createCopyrights() {
     return (
         <div className="copyrights">
-            <h2>Copyrights</h2>
+            <h2><a href="https://maxzell.github.io/152/" target="_blank" rel="noreferrer">MaxZell</a> Source References</h2>
+            <p>All image and video rights belong to me, Maxim Zelensky.</p>{/*add link zu impressum*/}
+            <h3>Videos</h3>
+            <a href="https://youtu.be/bocIxDHTu9U" target="_blank" rel="noreferrer">video source</a>
+            <h3>Images</h3>
+            <p><a href="https://www.instagram.com/p/B_nUQelgtUZ/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noreferrer">amabie image source</a></p>
+            <a href="https://progerpadawan.github.io/images/logo.png" target="_blank" rel="noreferrer">icon source</a>
+            <h3>Audios</h3>
+            <p>All rights to the song "row row fight the power" belong to their owners.</p>
+            <a href="https://youtu.be/0V7aUT13qtM" target="_blank" rel="noreferrer">music source</a>
+            <br />
+            <br />
+            <h2>Copyrights Types</h2>
 
             <div className="copyright">
                 <h3><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noreferrer">GNU license</a></h3>

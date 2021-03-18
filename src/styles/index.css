@@ -8,6 +8,10 @@ body {
   background-color: #282c34;
   font-size: 20px;
   color: white;
+  margin-bottom: 100px;  
+}
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 code {
@@ -27,4 +31,14 @@ code {
 
 .topbutton:hover{
   opacity: 1;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#1a1d22;
+  color: bisque;
+  text-align: center;
 }

@@ -1,11 +1,10 @@
 .App {
   text-align: center;
+  
 }
 
 nav{
-  width: 100%;
-  /* max-width: 700px; */
-  /* display: table-row; */
+  display: inline-block;
 }
 
 nav ul {

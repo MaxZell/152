@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <footer> <small>&copy; Copyright 2021, Maxim Zelensky</small> </footer>
   </React.StrictMode>,
   document.getElementById('root')
 );

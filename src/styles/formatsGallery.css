@@ -34,5 +34,6 @@ audio{
 }
 
 .point{
-    
+    width: auto;
+    height: auto;
 }

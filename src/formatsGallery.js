@@ -2,6 +2,7 @@ import './styles/formatsGallery.css'
 
 import {drawTopButton} from './topButton'
 import Canvas from './Canvas'
+import Animation from './svgAni'
 
 const imagesUrl = process.env.PUBLIC_URL + '/assets/formats/images/amabie';
 const videosUrl = process.env.PUBLIC_URL + '/assets/formats/videos/soap_in_the_eye';
@@ -25,7 +26,7 @@ export function createGallery(){
             </div>
             <div className="pictures">
                 <h2>Images</h2>
-                <img src={imagesUrl + ".bmp"} alt="bmp" title="bmp" />
+                <img src={imagesUrl + ".bmp"} width="auto" alt="bmp" title="bmp" />
                 <img src={imagesUrl + ".gif"} alt="gif" title="gif" />
                 <img src={imagesUrl + ".ico"} alt="ico" title="ico" />
                 <img src={imagesUrl + ".jpg"} alt="jpg" title="jpg" />
@@ -41,6 +42,7 @@ export function createGallery(){
                 <audio autoPlay controls src={audiosUrl + ".ogg"} title="ogg" />
             </div>
             <Canvas className="point" />
+            <Animation />
             <Button />
         </div>
     );

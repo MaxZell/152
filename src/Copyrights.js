@@ -1,5 +1,11 @@
 import './styles/Copyrights.css';
 
+import {drawTopButton} from './topButton';
+
+function Button(){
+    return drawTopButton();
+}
+
 export function createCopyrights() {
     return (
         <div className="copyrights">
@@ -71,6 +77,7 @@ export function createCopyrights() {
                         <li>Do not use technology to restrict other licensees from lawful uses of the work.</li>
                     </ul>
             </div>
+            <Button />
         </div>
         
     );

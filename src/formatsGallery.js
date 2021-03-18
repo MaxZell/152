@@ -1,8 +1,14 @@
 import './styles/formatsGallery.css'
 
+import {drawTopButton} from './topButton'
+
 const imagesUrl = process.env.PUBLIC_URL + '/assets/formats/images/amabie';
 const videosUrl = process.env.PUBLIC_URL + '/assets/formats/videos/soap_in_the_eye';
 const audiosUrl = process.env.PUBLIC_URL + '/assets/formats/audios/Row_Row_Fight_the_Power';  
+
+function Button(){
+    return drawTopButton();
+}
 
 export function createGallery(){ 
     return (
@@ -33,6 +39,7 @@ export function createGallery(){
                 <audio autoPlay controls src={audiosUrl + ".mp3"} title="mp3" />
                 <audio autoPlay controls src={audiosUrl + ".ogg"} title="ogg" />
             </div>
+            <Button />
         </div>
     );
 }

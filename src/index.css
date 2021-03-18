@@ -14,3 +14,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.topbutton{
+  height: 100px;
+  text-align:center;
+  position:fixed;
+  bottom:25px;
+  right:5px;
+  cursor:pointer;
+  opacity: 0.5;
+}
+
+.topbutton:hover{
+  opacity: 1;
+}

@@ -1,15 +1,38 @@
-img{
+.pictures img{
     height: 200px;
     width: auto;
     padding: 3px;
+    animation-name: sizer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sizer {
+    0%   {height: 200px;}
+    25%  {height: 150px;}
+    50%  {height: 100px;}
+    75%  {height: 150px;}
+    100% {height: 200px;}
 }
 
 video{
     height: 200px;
     width: auto;
     padding: 3px;
+    animation-name: rotater;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotater {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 audio{
     padding: 3px;
+}
+
+.point{
+    
 }

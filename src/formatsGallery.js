@@ -1,6 +1,7 @@
 import './styles/formatsGallery.css'
 
 import {drawTopButton} from './topButton'
+import Canvas from './Canvas'
 
 const imagesUrl = process.env.PUBLIC_URL + '/assets/formats/images/amabie';
 const videosUrl = process.env.PUBLIC_URL + '/assets/formats/videos/soap_in_the_eye';
@@ -39,6 +40,7 @@ export function createGallery(){
                 <audio autoPlay controls src={audiosUrl + ".mp3"} title="mp3" />
                 <audio autoPlay controls src={audiosUrl + ".ogg"} title="ogg" />
             </div>
+            <Canvas className="point" />
             <Button />
         </div>
     );

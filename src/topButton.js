@@ -28,9 +28,9 @@ function SVS_B(eAmt, where) {
 export function drawTopButton(){
     return (
         <div className="Styleguide">
-            <a onClick={() => topButtonFunction()}>
+            <div onClick={() => topButtonFunction()}>
                 <img src={process.env.PUBLIC_URL + '/assets/icon_up_green.svg'} className="topbutton" alt="top" />
-            </a>
+            </div>
         </div>
     );
 }

@@ -1,5 +1,11 @@
 import './styles/Formats.css';
 
+import {drawTopButton} from './topButton';
+
+function Button(){
+    return drawTopButton();
+}
+
 export function createFormats(){
     return (
         <div className="formats">
@@ -163,6 +169,7 @@ export function createFormats(){
                     <li>Maximum 4GB size</li>
                 </ul>
             </div>
+            <Button />
         </div>
     );
 }

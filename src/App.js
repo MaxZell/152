@@ -10,6 +10,7 @@ import { createGallery } from "./formatsGallery";
 import { createFormats } from "./Formats";
 import { createCopyrights } from "./Copyrights";
 import { createIFrame } from "./DSGVO";
+import { createHome } from "./Home";
 
 function setActive(name) {
   console.log(`tab: ${name}`);
@@ -57,7 +58,7 @@ class App extends Component {
   }
 }
 
-const Home = () => <h2>Home</h2>
+const Home = () => createHome();
 const Impressum = () => createImpressum();
 const Styleguide = () => createStyleguide();
 const Gallery = () => createGallery();

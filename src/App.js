@@ -6,6 +6,7 @@ import { createCopyrights } from "./Copyrights";
 import { createIFrame } from "./DSGVO";
 import { createStyleguide } from "./Styleguide";
 import { createGallery } from "./formatsGallery";
+import { createFormats } from "./Formats";
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
@@ -38,6 +39,10 @@ function MediaGallery() {
   return createGallery();
 }
 
+function Formats() {
+  return createFormats();
+}
+
 function setActive(name) {
   console.log(`tab: ${name}`);
 }
@@ -63,7 +68,7 @@ function App() {
             <nav>
               <ul>
                 <li onClick={() => setActive('home')}>
-                  <Link to="/">Home</Link>
+                  <Link to="/152">Home</Link>
                 </li>
                 <li onClick={() => setActive('impressum')}>
                   <Link to="/impressum">Impressum</Link>
@@ -73,6 +78,9 @@ function App() {
                 </li>
                 <li onClick={() => setActive('gallery')}>
                   <Link to="/gallery">Gallery</Link>
+                </li>
+                <li onClick={() => setActive('formats')}>
+                  <Link to="/formats">Media Formats</Link>
                 </li>
                 <li onClick={() => setActive('copyrights')}>
                   <Link to="/copyrights">Copyrights</Link>
@@ -91,6 +99,9 @@ function App() {
               </Route>
               <Route path="/gallery">
                 <MediaGallery />
+              </Route>
+              <Route path="/formats">
+                <Formats />
               </Route>
               <Route path="/copyrights">
                 <Copyrights />

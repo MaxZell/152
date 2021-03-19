@@ -19,10 +19,11 @@ export function createCopyrights() {
             <h3>Audios</h3>
             <p>All rights to the song "row row fight the power" belong to their owners.</p>
             <a href="https://youtu.be/0V7aUT13qtM" target="_blank" rel="noreferrer">music source</a>
+            
             <br />
             <br />
-            <h2>Copyrights Types</h2>
 
+            <h2>Copyrights Types</h2>
             <div className="copyright">
                 <h3><a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noreferrer">GNU license</a></h3>
                 <p>The GPL gives recipients of computer software the following rights, or "freedoms:</p>
@@ -88,6 +89,14 @@ export function createCopyrights() {
                         <li>Do not modify the terms of the license.</li>
                         <li>Do not use technology to restrict other licensees from lawful uses of the work.</li>
                     </ul>
+            </div>
+
+            <br />
+            <br />
+
+            <h2>Copyright vs license</h2>
+            <div className="copyright">
+                <p>Copyright vs license</p>
             </div>
             <Button />
         </div>

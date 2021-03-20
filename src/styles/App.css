@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  
 }
 
 nav{
@@ -29,6 +28,11 @@ nav li {
 
 nav li a{
   padding: 14px 16px;
+  color: bisque;
+}
+
+nav a {
+  color: bisque;
 }
 
 nav a:visited {
@@ -37,3 +41,23 @@ nav a:visited {
 nav a:hover {
   color: red;
 }
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  nav li{
+    font-size: 20px;
+  }
+
+  th{
+    font-size: 15px;
+  }
+
+  nav li a{
+    padding: 10px 5px;
+  }
+}
+
+/* tablets */
+@media only screen and (min-width: 600px) {
+
+};

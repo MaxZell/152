@@ -27,6 +27,7 @@ code {
   right:5px;
   cursor:pointer;
   opacity: 0.5;
+  z-index: 10;
 }
 
 .topbutton:hover{
@@ -35,10 +36,21 @@ code {
 
 footer {
   position: fixed;
-  left: 0;
+  /* left: 0; */
   bottom: 0;
   width: 100%;
   background-color:#1a1d22;
   color: bisque;
   text-align: center;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  body{
+    font-size: 15px;
+  }
+  
+  .topbutton{
+    height: 70px;
+  }
 }

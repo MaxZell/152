@@ -14,7 +14,7 @@ export function createCopyrights() {
             <h3>Videos</h3>
             <a href="https://youtu.be/bocIxDHTu9U" target="_blank" rel="noreferrer">video source</a>
             <h3>Images</h3>
-            <p><a href="https://www.instagram.com/p/B_nUQelgtUZ/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noreferrer">amabie image source</a></p>
+            <a href="https://www.instagram.com/p/B_nUQelgtUZ/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noreferrer">amabie image source</a>
             <a href="https://progerpadawan.github.io/images/logo.png" target="_blank" rel="noreferrer">icon source</a>
             <h3>Audios</h3>
             <p>All rights to the song "row row fight the power" belong to their owners.</p>

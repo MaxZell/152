@@ -9,7 +9,19 @@ tr{
 th{
     text-align: left;
 }
+
 .title{
     text-align: center;
     padding: 5px;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .impressum{
+        margin: 0px 10%;
+    }
+    
+    tr{
+        font-size: 15px;
+    }
 }

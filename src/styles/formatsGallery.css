@@ -18,7 +18,7 @@
 video{
     height: 200px;
     width: auto;
-    padding: 3px;
+    padding-left: 3px;
     animation-name: rotater;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -37,3 +37,14 @@ audio{
     width: auto;
     height: auto;
 }
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    video{
+        height: 150px;
+        animation-name: none;
+    }
+    .pictures img{
+        animation-name: none;
+    }
+  }

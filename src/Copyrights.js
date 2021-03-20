@@ -96,7 +96,24 @@ export function createCopyrights() {
 
             <h2>Copyright vs license</h2>
             <div className="copyright">
-                <p>Copyright vs license</p>
+                <h3>License</h3>
+                <p>
+                    License - permission to the right,
+                    or the right to perform some actions, 
+                    which can be certified (confirmed) by the document of the same name.
+                </p>
+                <h3>Copyright</h3>
+                <p>
+                    Copyright - an institute of civil law regulating legal relations
+                    connected with the creation and use (publication, performance, display, etc.)
+                    of works of science, literature or art, that is,
+                    the objective results of the creative activity of people in these fields.
+                </p>
+                <h3>Copyright vs License</h3>
+                <p>
+                    Copyright - owned by you, License - "lease agreement".
+                    Ownership(Copyright) can be transferred by means of a license.
+                </p>
             </div>
             <Button />
         </div>

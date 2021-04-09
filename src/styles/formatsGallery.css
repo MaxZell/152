@@ -38,6 +38,18 @@ audio{
     height: auto;
 }
 
+/* .photos img{
+    height: 200px;
+    width: auto;
+    padding: 3px;
+} 
+
+.thumbnails{
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+}*/
+
 /* mobile */
 @media only screen and (max-width: 768px) {
     video{

@@ -18,7 +18,7 @@ export function App() {
   return (
     <div className="ani">
       <h3>Choose you favorite Country</h3>
-      <p>From last visit: {country}</p>
+      <p className="country">From last visit: {country}</p>
       <label>
         enter country
         <Hint className="countr" options={countries} allowTabFill>

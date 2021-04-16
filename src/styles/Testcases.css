@@ -1,0 +1,53 @@
+.testcases table{
+    width:100%;
+}
+
+.testcase{
+    padding: 10px;
+}
+
+.testcases table{
+    border: 2px solid white;
+}
+
+.testcases th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.responsDesign img{
+    height: 400px;
+    width: auto;
+    border: 5px solid green;
+}
+
+.tableImage{
+    height: 200px;
+    width: auto;
+    border: 1px solid white;
+}
+
+.autocompl img{
+    height: 400px;
+    width: auto;
+    border: 5px solid green;
+}
+
+.selenium img{
+    height: 400px;
+    width: auto;
+    border: 5px solid green;
+}
+
+.selenium video{
+    height: 400px;
+    width: auto;
+    padding-left: 3px;
+    animation-name: none;   
+}
+
+.lighthouse img{
+    height: 400px;
+    width: auto;
+}

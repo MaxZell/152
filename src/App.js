@@ -9,6 +9,8 @@ import { createStyleguide } from "./Styleguide";
 import { createGallery } from "./formatsGallery";
 import { createFormats } from "./Formats";
 import { createCopyrights } from "./Copyrights";
+import { createTestcase } from "./Testcases";
+import { createReflection } from "./Reflection";
 import { createIFrame } from "./DSGVO";
 import { createHome } from "./Home";
 
@@ -39,6 +41,8 @@ class App extends Component {
                   <li onClick={() => setActive('styleguide')}><Link to="/styleguide">Styleguide</Link></li>
                   <li onClick={() => setActive('gallery')}><Link to="/gallery">Gallery</Link></li>
                   <li onClick={() => setActive('formats')}><Link to="/formats">Media Formats</Link></li>
+                  <li onClick={() => setActive('testcases')}><Link to="/testcases">Testcases</Link></li>
+                  <li onClick={() => setActive('reflection')}><Link to="/reflection">Reflection</Link></li>
                   <li onClick={() => setActive('copyrights')}><Link to="/copyrights">Copyrights</Link></li>
                   <li onClick={() => setActive('dsgvo')}><Link to="/dsgvo">DSGVO</Link></li>
                 </ul>
@@ -49,6 +53,8 @@ class App extends Component {
             <Route path="/styleguide" component={Styleguide} />
             <Route path="/gallery" component={Gallery} />
             <Route path="/formats" component={Formats} />
+            <Route path="/testcases" component={Testcases} />
+            <Route path="/reflection" component={Reflection} />
             <Route path="/copyrights" component={Copyrights} />
             <Route path="/dsgvo" component={Dsgvo} />
           </div>
@@ -63,7 +69,9 @@ const Impressum = () => createImpressum();
 const Styleguide = () => createStyleguide();
 const Gallery = () => createGallery();
 const Formats = () => createFormats();
-const  Copyrights= () => createCopyrights();
-const  Dsgvo= () => createIFrame();
+const Testcases = () => createTestcase();
+const Reflection = () => createReflection();
+const Copyrights= () => createCopyrights();
+const Dsgvo= () => createIFrame();
 
 export default App;

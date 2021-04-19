@@ -14,7 +14,12 @@ export function createTestcase() {
   return (
     <div className="testcases">
         <h1>Storytellng</h1>
-        <p></p>
+        <p>
+            I believe that menus can be used as a narrative and attention management method for the user.<br />
+            I build a pyramid of menus by the amount of content. <br />
+            Home is the beginning, the preface. Media Formats/ Testcases have the most information.<br />
+            And DSGVO as an easy completion.
+        </p>
         <h1>Responsive design</h1>
         <div className="responsDesign">
             <h2>Desktop</h2>

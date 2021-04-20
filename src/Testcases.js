@@ -40,21 +40,22 @@ export function createTestcase() {
                     </tr>
                     <tr>
                         <th>Description</th>
-                        <td></td>
+                        <td>Autofill</td>
                     </tr>
                     <tr>
                         <th>Test steps</th>
                         <td>
                             <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Go to home page.</li>
+                                <li>Click on input under "Choose you favorite Country".</li>
+                                <li>Type "Switz"</li>
+                                <li>Type Click on translucent end of the word.</li>
                             </ol>
                         </td>
                     </tr>
                     <tr>
                         <th>Expected result</th>
-                        <td></td>
+                        <td>Autofill function auto fill countries input.</td>
                     </tr>
                 </tbody>
             </table>
@@ -94,15 +95,16 @@ export function createTestcase() {
                         <th>Test steps</th>
                         <td>
                             <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Go to home page.</li>
+                                <li>Click on input under "Choose you favorite Country".</li>
+                                <li>Type "Switzerland".</li>
+                                <li>Reload page.</li>
                             </ol>
                         </td>
                     </tr>
                     <tr>
                         <th>Expected result</th>
-                        <td></td>
+                        <td>After page reload "From last visit:Switzerland"</td>
                     </tr>
                 </tbody>
             </table>
@@ -136,21 +138,21 @@ export function createTestcase() {
                     </tr>
                     <tr>
                         <th>Description</th>
-                        <td></td>
+                        <td>Back top top button.</td>
                     </tr>
                     <tr>
                         <th>Test steps</th>
                         <td>
                             <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Go to styleguide page.</li>
+                                <li>Scroll down the page.</li>
+                                <li>Click on green button - right bottom.</li>
                             </ol>
                         </td>
                     </tr>
                     <tr>
                         <th>Expected result</th>
-                        <td></td>
+                        <td>The user returned to the top of the page.</td>
                     </tr>
                 </tbody>
             </table>
@@ -184,11 +186,19 @@ export function createTestcase() {
                     </tr>
                     <tr>
                         <th>Description</th>
-                        <td></td>
+                        <td>Iframe testing</td>
+                    </tr>
+                    <tr>
+                        <th>Test steps</th>
+                        <td>
+                            <ol>
+                                <li>Go to DSGVO page.</li>
+                            </ol>
+                        </td>
                     </tr>
                     <tr>
                         <th>Expected result</th>
-                        <td></td>
+                        <td>DSGVO website has opened.</td>
                     </tr>
                 </tbody>
             </table>

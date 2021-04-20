@@ -1,7 +1,15 @@
-.testcases tr, th, td {
-    border: 1px solid white;
-    border-collapse: collapse;
-    padding: 5px;
+.timeplanning{
+    text-align: center;
+}
+
+.timeplanning table{
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.timeplanning td{
+    text-align: left;
 }
 
 .sitemap img{
@@ -22,6 +30,16 @@
     border: 5px solid green;
 }
 
+.logos img{
+    height: 100px;
+    width: auto;
+}
+
+.icons img{
+    height: 100px;
+    width: auto;
+}
+
 @media only screen and (max-width: 768px) {
     .sitemap img{
         height: auto;
@@ -36,5 +54,10 @@
     .wireframes .vertical{
         height: auto;
         width: 60%;
+    }
+
+    .timeplanning table{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

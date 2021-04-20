@@ -1,0 +1,14 @@
+.reflection table{
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.reflection td{
+    text-align: left;
+}
+
+.reflection table{
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -9,6 +9,13 @@
 }
 
 .reflection table{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .reflection table{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
